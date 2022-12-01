@@ -1,0 +1,112 @@
+$primary: #1F1B24;
+
+html {
+    scroll-behavior: smooth;
+    
+    &.custom-bg {
+        background-color: $primary;
+        height: 100vh;
+      }
+    
+    a {
+        font-weight: 300px;
+    }
+    
+    .navbar-item:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+      
+    .navbar-item:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    @media (max-width:750px) {
+    .columns {
+        background: palegreen;
+        margin-top: 10px;
+        margin: 10px;
+        .column {
+            margin: 0 auto;
+            margin-bottom: 0px;
+            text-align: center;
+            height: 300px;
+            width: 200px;
+            padding: 10px;
+
+            .card {
+                min-width: 350px;
+                margin-left: -85px;
+                height: 285px;
+                padding: none;
+
+                img {
+                    object-fit: cover;
+                }
+
+               
+
+                .card-content {
+                    margin-top: -30px;
+                }
+
+            }
+           
+        }
+    }
+}
+
+   @media (min-width:850px) { 
+    .columns {
+        margin-top: 10px;
+        justify-content: center;
+        padding: 30px;
+    
+        .column {
+            padding:10px;
+            height: 350px;
+            width: 150px;
+            background: palegreen;
+            margin: 10px;
+
+            .card {
+                 height: 330px;
+                .card-content {
+                    text-align: center;
+                }
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+           
+        }
+    
+       }
+   }
+
+    h1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    img {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+    }
+
+}
+
+  

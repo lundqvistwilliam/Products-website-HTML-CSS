@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+html.custom-bg {
+  background-color: #1F1B24;
+  height: 100vh;
+}
+html a {
+  font-weight: 300px;
+}
+html .navbar-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1F1B24;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+html .navbar-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media (max-width: 750px) {
+  html .columns {
+    background: palegreen;
+    margin-top: 10px;
+    margin: 10px;
+  }
+  html .columns .column {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+  }
+  html .columns .column .card {
+    min-width: 350px;
+    margin-left: -85px;
+    height: 285px;
+    padding: none;
+  }
+  html .columns .column .card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html .columns .column .card .card-content {
+    margin-top: -30px;
+  }
+}
+@media (min-width: 850px) {
+  html .columns {
+    margin-top: 10px;
+    justify-content: center;
+    padding: 30px;
+  }
+  html .columns .column {
+    padding: 10px;
+    height: 350px;
+    width: 150px;
+    background: palegreen;
+    margin: 10px;
+  }
+  html .columns .column .card {
+    height: 330px;
+  }
+  html .columns .column .card .card-content {
+    text-align: center;
+  }
+  html .columns .column .card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+html h1 {
+  text-align: center;
+  padding: 10px;
+}
+html img {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */

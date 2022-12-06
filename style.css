@@ -8,6 +8,49 @@ html.custom-bg {
 html a {
   font-weight: 300px;
 }
+html #startQuote {
+  text-align: center;
+  margin-left: 50px;
+}
+html footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 30px;
+}
+html li {
+  display: inline;
+  margin: 10px;
+}
+html #commentBox {
+  background-color: grey;
+  margin: 20px 20px;
+  padding: 15px;
+  color: black;
+}
+html #commentBox #starRating {
+  margin-left: 35px;
+  padding: 10px;
+}
+html #commentBox #starRating .fa-star {
+  color: yellow;
+}
+html .has-bg-img {
+  background: url(assets/city-night-skyline-cartoon-background_1441-3319.webp);
+  background-size: cover;
+}
+html #employeesText {
+  margin-top: 5%;
+}
+html #quoteCard {
+  text-align: center;
+}
+html img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 html .navbar-item:after {
   content: "";
   position: absolute;
@@ -24,7 +67,7 @@ html .navbar-item:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-@media (max-width: 750px) {
+@media (min-width: 769px) {
   html .columns {
     background: palegreen;
     margin-top: 10px;
@@ -52,21 +95,22 @@ html .navbar-item:hover:after {
     margin-top: -30px;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 1024px) {
   html .columns {
-    margin-top: 10px;
+    display: flex;
     justify-content: center;
-    padding: 30px;
+    margin-top: 10px;
   }
   html .columns .column {
     padding: 10px;
-    height: 350px;
+    height: 370px;
     width: 150px;
     background: palegreen;
     margin: 10px;
   }
   html .columns .column .card {
-    height: 330px;
+    height: 350px;
+    margin-left: 3px;
   }
   html .columns .column .card .card-content {
     text-align: center;
@@ -75,12 +119,59 @@ html .navbar-item:hover:after {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  html img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html #startQuote {
+    margin-top: 100px;
+    font-size: 50px;
+    margin-left: 20px;
+  }
+  html #schoolImage {
+    height: 500px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  html .formArea {
+    background-color: white;
+  }
+  html .formArea #questionText {
+    text-align: center;
+    padding: 15px;
+  }
+  html .formArea .field {
+    width: 30%;
+    margin: auto;
+  }
+  html .formArea .field button {
+    margin-bottom: 15px;
+  }
+  html footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+  }
+  html li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+  }
 }
-html h1 {
+
+h1 {
   text-align: center;
   padding: 10px;
 }
-html img {
+
+img {
   width: 100%;
   height: 150px;
   padding: 10px;

@@ -1,6 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
 html.custom-bg {
   background-color: #1F1B24;
   height: 100vh;
@@ -23,6 +20,76 @@ html footer {
 html li {
   display: inline;
   margin: 10px;
+}
+html #questionText {
+  color: white;
+  text-align: center;
+}
+html .formArea {
+  padding: 10px;
+}
+html .label {
+  color: white;
+}
+html .buyBtn {
+  background: palegreen;
+}
+@media (max-width: 600px) {
+  html .columns {
+    margin-left: 0;
+  }
+  html #quoteCard {
+    margin-left: 10px;
+  }
+  html #image-track {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  html footer {
+    padding: 5px;
+    padding-bottom: 5px;
+  }
+  html .browse {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  html .browse #browseBtn {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: gold;
+    justify-content: center;
+  }
+  html .browse #browseBtn:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+  html #image-track {
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    justify-content: center;
+    align-items: center;
+  }
+  html .timelineText {
+    text-align: center;
+    color: white;
+  }
+  html #startQuote {
+    text-align: center;
+    margin-left: 100px;
+    padding-top: 10px;
+  }
 }
 html #commentBox {
   background-color: grey;
@@ -59,7 +126,7 @@ html .navbar-item:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1F1B24;
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -67,7 +134,7 @@ html .navbar-item:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-@media (min-width: 769px) {
+@media (min-width: 750px) and (max-width: 1023px) {
   html .columns {
     background: palegreen;
     margin-top: 10px;
@@ -92,7 +159,29 @@ html .navbar-item:hover:after {
        object-fit: cover;
   }
   html .columns .column .card .card-content {
-    margin-top: -30px;
+    margin-top: -40px;
+  }
+  html #startQuote {
+    text-align: center;
+    margin-left: 300px;
+    padding-top: 10px;
+  }
+  html .browse {
+    margin-top: 5px;
+  }
+  html .timelineText {
+    text-align: center;
+    color: white;
+  }
+  html #image-track {
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 1024px) {
@@ -114,10 +203,25 @@ html .navbar-item:hover:after {
   }
   html .columns .column .card .card-content {
     text-align: center;
+    padding: 5px;
+  }
+  html .columns .column .card .card-content #buyBtn {
+    background-color: #00d1b2;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+  }
+  html .columns .column .card .card-content #cartBtn {
+    background-color: gold;
+    border-radius: 5px;
+    cursor: pointer;
   }
   html .columns .column .card img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  html .columns .column .card img:hover {
+    transform: scaleX(-1);
   }
   html img {
     -o-object-fit: cover;
@@ -127,6 +231,87 @@ html .navbar-item:hover:after {
     margin-top: 100px;
     font-size: 50px;
     margin-left: 20px;
+  }
+  html #adress {
+    text-align: center;
+  }
+  html #logoImage {
+    width: 150px;
+    -o-object-position: center;
+       object-position: center;
+  }
+  html .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  html .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  html .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin-left: -5px;
+  }
+  html .container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  html .left {
+    left: 0;
+  }
+  html .right {
+    left: 50%;
+  }
+  html .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  html .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  html .right::after {
+    left: -8px;
+  }
+  html .timelineText {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
   }
   html #schoolImage {
     height: 500px;
@@ -175,4 +360,50 @@ img {
   width: 100%;
   height: 150px;
   padding: 10px;
+}
+
+.image-container {
+  width: 100%;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#image-track {
+  display: flex;
+  gap: 3vmin;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  justify-content: center;
+}
+
+.browse {
+  text-align: right;
+  padding: 20px;
+  margin-top: -100px;
+  margin-right: 200px;
+  color: white;
+}
+.browse #browseBtn {
+  width: 31%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: gold;
+}
+.browse #browseBtn:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+#promoPhoto {
+  width: 100%;
+  height: 70%;
 }/*# sourceMappingURL=style.css.map */

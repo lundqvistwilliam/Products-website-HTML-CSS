@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -14,7 +14,7 @@
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-vector-shoes-icon-png-image_892571.jpg" id="logoImage">
           </a>
       
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -24,7 +24,7 @@
           </a>
         </div>
         <div id="navbar" class="navbar-menu ">
-            <div class="navbar-start" style="flex-grow: 1; justify-content: center;"
+            <div class="navbar-start" 
             >
               <a class="navbar-item has-text-black" href="index.html">
                 Home
@@ -48,7 +48,7 @@
         <main>
             <h1 class="title has-text-white">Contact Us</h1>
             <section>
-                <ul>
+                <ul id="adress">
                     <li class="has-text-white">Adress: <a href="https://www.google.se/maps/place/Tomtebodav%C3%A4gen+3A,+171+65+Solna/@59.345223,18.0212456,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d9cd12a90e3:0x5d507840ccf1f4a3!8m2!3d59.345223!4d18.0234343" target="_blank">Tomtebodavägen 3A, Solna, Sweden
                     </a></li>
                     <br>
@@ -59,7 +59,7 @@
                  height="200"
                  width="200"/>
             </section>
-            
+
             <section class="formArea">
                 <h2 class="subtitle" id="questionText"><b>Have a question? Contact us!</b></h2>
                 <div class="field">
@@ -117,7 +117,7 @@
                   </div>                  
                   <div class="field is-grouped" id="buttonsGroup">
                     <form>
-                      <input type="submit" class="button is-link" >
+                      <input type="submit" class="button is-link" onclick="alertMessage()" >
                     </form>
                     <div class="control">
                       <button class="button is-link is-light">Cancel</button>
@@ -140,4 +140,10 @@
               </ul>
           </footer>
 </body>
+
+<script>
+    function alertMessage() {
+        alert("Thank you for submitting. We will come back to you shortly.")
+    }
+</script>
 </html>

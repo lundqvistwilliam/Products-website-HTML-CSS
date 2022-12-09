@@ -91,11 +91,22 @@ html .buyBtn {
     padding-top: 10px;
   }
 }
+html #referencesText {
+  padding: 15px;
+}
+html #address {
+  padding: 6px;
+  margin-bottom: 6px;
+}
 html #commentBox {
-  background-color: grey;
+  background-color: #1F1B24;
   margin: 20px 20px;
   padding: 15px;
-  color: black;
+  color: white;
+  border: 1px solid white;
+}
+html #commentBox strong {
+  color: #00d1b2;
 }
 html #commentBox #starRating {
   margin-left: 35px;
@@ -192,26 +203,24 @@ html .navbar-item:hover:after {
   }
   html .columns .column {
     padding: 10px;
-    height: 370px;
     width: 150px;
     background: palegreen;
     margin: 10px;
   }
   html .columns .column .card {
-    height: 350px;
     margin-left: 3px;
   }
   html .columns .column .card .card-content {
     text-align: center;
     padding: 5px;
   }
-  html .columns .column .card .card-content #buyBtn {
+  html .columns .column .card .card-content .buyBtn {
     background-color: #00d1b2;
     border-radius: 10px;
     height: 30px;
     cursor: pointer;
   }
-  html .columns .column .card .card-content #cartBtn {
+  html .columns .column .card .card-content .cartBtn {
     background-color: gold;
     border-radius: 5px;
     cursor: pointer;
@@ -395,13 +404,13 @@ img {
   margin-right: 200px;
   color: white;
 }
-.browse #browseBtn {
+.browse .browseBtn {
   width: 31%;
   height: 50px;
   border-radius: 20px;
   background-color: gold;
 }
-.browse #browseBtn:hover {
+.browse .browseBtn:hover {
   cursor: pointer;
   background-color: white;
 }

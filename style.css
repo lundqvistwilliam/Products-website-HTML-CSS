@@ -230,7 +230,10 @@ html .navbar-item:hover:after {
   html #startQuote {
     margin-top: 100px;
     font-size: 50px;
-    margin-left: 20px;
+    margin-left: 105px;
+  }
+  html .browse {
+    margin-right: 50px;
   }
   html #adress {
     text-align: center;
@@ -327,6 +330,7 @@ html .navbar-item:hover:after {
   html .formArea #questionText {
     text-align: center;
     padding: 15px;
+    color: black;
   }
   html .formArea .field {
     width: 30%;
@@ -335,6 +339,9 @@ html .navbar-item:hover:after {
   html .formArea .field button {
     margin-bottom: 15px;
   }
+  html #nameText {
+    margin-top: 30px;
+  }
   html footer {
     left: 0;
     bottom: 0;
@@ -342,9 +349,9 @@ html .navbar-item:hover:after {
     color: white;
     text-align: center;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 50px;
   }
-  html li {
+  html footer li {
     display: inline;
     list-style: none;
     padding: 10px;
@@ -360,10 +367,6 @@ img {
   width: 100%;
   height: 150px;
   padding: 10px;
-}
-
-.image-container {
-  width: 100%;
 }
 
 #image-track > .image {
@@ -403,7 +406,14 @@ img {
   background-color: white;
 }
 
-#promoPhoto {
-  width: 100%;
-  height: 70%;
+@media (min-width: 2400px) {
+  .browse {
+    margin-right: 200px;
+  }
+  #employeesText {
+    font-size: 60px;
+  }
+  .columns {
+    margin-top: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */

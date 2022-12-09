@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
@@ -17,15 +18,14 @@
           </a>
       
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <span hidden="true"></span>
+            <span hidden="true"></span>
+            <span hidden="true"></span>
           </a>
         </div>
       
-        <div id="navbar" class="navbar-menu ">
-          <div class="navbar-start"
-          >
+        <div id="navbarBasicExample" class="navbar-menu ">
+          <div class="navbar-start">
             <a class="navbar-item has-text-white is-active">
               <b>Home</b>
             </a>
@@ -41,16 +41,16 @@
             <a class="navbar-item has-text-black" href="contact-us-page.html">
               Contact Us
             </a>
-            </div>
           </div>
         </div>
       </nav>
-      <h1 class="title has-text-white"><b>Ankademin Shoes</b></h1>
+
+      <h1 class="title has-text-white" id="nameText"><b>Ankademin Shoes</b></h1>
       <h1 class="subtitle has-text-white has-text-left" id="startQuote">we have the <a href="products-page.html"><span id="cursive"><em>shoes</em></span></a> <br>you have the <b>choice</b></h1>
       <div class="browse">
-      <span><h2 class="startText">Find your next pair of shoes, always available</h2></span> 
-      <a href="products-page.html">
-      <button id="browseBtn"><b>Browse shoes now</b></button>
+        <span><h2 class="startText">Find your next pair of shoes, always available</h2></span> 
+        <a href="products-page.html">
+        <button id="browseBtn"><b>Browse shoes now</b></button>
     </a>
     </div>
     <div id="image-track">

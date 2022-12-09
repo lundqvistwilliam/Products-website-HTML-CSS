@@ -287,7 +287,11 @@ html {
     #startQuote {
         margin-top: 100px;
         font-size: 50px;
-        margin-left: 20px;
+        margin-left: 105px;
+    }
+
+    .browse {
+        margin-right: 50px;
     }
 
     #adress {
@@ -399,6 +403,7 @@ html {
         #questionText {
             text-align: center;
             padding: 15px;
+            color: black;
         }
 
         .field {
@@ -412,6 +417,9 @@ html {
         }
     }
 
+    #nameText {
+        margin-top: 30px;
+    }
 
 
     footer {
@@ -421,9 +429,7 @@ html {
         color: white;
         text-align: center;
         height: 30px;
-        margin-top: 10px;
-    }
-        
+        margin-top: 50px;
 
         li {
             display: inline;
@@ -431,6 +437,9 @@ html {
             padding: 10px;
         }
     }
+        
+
+}
    }
 
     h1 {
@@ -444,12 +453,6 @@ html {
         height: 150px;
         padding: 10px;
     }
-
-    .image-container {
-        width: 100%;
-        // border: 2px solid white;
-    }
-
     
     #image-track > .image {
         width: 40vmin;
@@ -484,11 +487,25 @@ html {
         }
     }
 
-    #promoPhoto {
-        width: 100%;
-        height: 70%;
+    @media (min-width:2400px) { 
+       .browse {
+        margin-right: 200px;
+       }
+
+       #employeesText {
+        font-size: 60px;
+       }
+
+       .columns {
+        margin-top: 250px;
+       }
+      
+
+  
     }
-   
+
+
+    
 
    
     

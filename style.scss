@@ -2,6 +2,7 @@ $primary: #1F1B24;
 $bulmaGreen: #00d1b2;
 
 html {
+
     
     &.custom-bg {
         background-color: $primary;
@@ -62,11 +63,8 @@ html {
         #quoteCard {
             margin-left: 10px;
         }
-        #image-track {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
+        
+      
 
         footer {
             padding: 5px;
@@ -100,7 +98,7 @@ html {
        
         #image-track {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             user-select: none;
             justify-content: center;
             align-items: center;
@@ -221,8 +219,11 @@ html {
            
         }
 
+
        
     }
+    
+
     #startQuote {
         text-align: center;
         margin-left: 300px;
@@ -244,7 +245,7 @@ html {
    
     #image-track {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         user-select: none;
         justify-content: center;
         align-items: center;
@@ -287,10 +288,11 @@ html {
                 img {
                     object-fit: cover;
                 }
-                img:hover  {
-                    transform: scaleX(-1);                    
-                }
-            }    
+              
+            } 
+            #shoes:hover  {
+                transform: scaleX(-1);                    
+            }   
         }
        }
        img {
@@ -309,6 +311,8 @@ html {
     #adress {
         text-align: center;
     }
+
+
 
     #logoImage {
          width: 150px;
@@ -477,6 +481,7 @@ html {
         gap: 3vmin;
         user-select: none;
         justify-content: center;
+        overflow-x:auto ;
     }
 
     .browse {
@@ -486,18 +491,39 @@ html {
         margin-right: 200px;
         color:white;
 
-        .browseBtn {
+        #browseBtn {
             width: 31%;
             height: 50px;
             border-radius: 20px;
             background-color: gold;
         }
 
-        .browseBtn:hover {
+        #browseBtn:hover {
             cursor: pointer;
-            background-color: white;
+            background-color: $bulmaGreen;
         }
+
+        
     }
+
+    #estText {
+        margin-top: 40px;
+    }
+
+    #productsText {
+        color: white;
+        padding: 30px;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    #shoppingCart {
+        color: gold;
+        padding: 6px;
+        font-size: 20px;
+    }
+
+   
 
     @media (min-width:2400px) { 
        .browse {

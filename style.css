@@ -41,11 +41,6 @@ html .buyBtn {
   html #quoteCard {
     margin-left: 10px;
   }
-  html #image-track {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
   html footer {
     padding: 5px;
     padding-bottom: 5px;
@@ -73,7 +68,7 @@ html .buyBtn {
   }
   html #image-track {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -186,7 +181,7 @@ html .navbar-item:hover:after {
   }
   html #image-track {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -229,7 +224,7 @@ html .navbar-item:hover:after {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  html .columns .column .card img:hover {
+  html .columns .column #shoes:hover {
     transform: scaleX(-1);
   }
   html img {
@@ -395,6 +390,7 @@ img {
       -ms-user-select: none;
           user-select: none;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .browse {
@@ -404,15 +400,32 @@ img {
   margin-right: 200px;
   color: white;
 }
-.browse .browseBtn {
+.browse #browseBtn {
   width: 31%;
   height: 50px;
   border-radius: 20px;
   background-color: gold;
 }
-.browse .browseBtn:hover {
+.browse #browseBtn:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #00d1b2;
+}
+
+#estText {
+  margin-top: 40px;
+}
+
+#productsText {
+  color: white;
+  padding: 30px;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+#shoppingCart {
+  color: gold;
+  padding: 6px;
+  font-size: 20px;
 }
 
 @media (min-width: 2400px) {

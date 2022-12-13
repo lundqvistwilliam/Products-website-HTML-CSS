@@ -32,6 +32,17 @@ html {
         margin:10px;
     }
 
+    #schoolImage {
+        margin-top: 20px;
+    }
+
+    #contactTitle {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        margin-top: 70px;
+    }
+
    
     
 
@@ -49,10 +60,11 @@ html {
     }
 
     .buyBtn {
-        background: palegreen;
+        background: $bulmaGreen;
         border-radius: 10px;
         height: 40px;
         width: 100px;
+        margin: 10px;
     }
 
     .cartBtn {
@@ -60,6 +72,7 @@ html {
         border-radius: 5px;
         cursor: pointer;
         height: 30px;
+        margin: 10px;
     }
 
    
@@ -285,6 +298,9 @@ html {
         align-items: center;
     }
 
+    .buyBtn {
+        margin-top: -20px;
+    }
    
        
 }
@@ -313,11 +329,14 @@ html {
                         border-radius: 10px;
                         height: 30px;
                         cursor: pointer;
+                        margin: 10px;
+                        text-align:center;
                     }
                     .cartBtn {
                         background-color: gold;
                         border-radius: 5px;
                         cursor: pointer;
+                        margin: 10px;
                     }
                 }
 
@@ -447,6 +466,14 @@ html {
         width: 50%;
     }
 
+    #contactTitle {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+        font-weight: 20px;
+    }
+
    
    
     .formArea {
@@ -472,6 +499,8 @@ html {
     #nameText {
         margin-top: 30px;
     }
+
+  
 
 
     footer {

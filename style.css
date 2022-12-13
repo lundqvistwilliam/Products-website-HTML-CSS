@@ -21,6 +21,15 @@ html li {
   display: inline;
   margin: 10px;
 }
+html #schoolImage {
+  margin-top: 20px;
+}
+html #contactTitle {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
 html #questionText {
   color: white;
   text-align: center;
@@ -32,16 +41,18 @@ html .label {
   color: white;
 }
 html .buyBtn {
-  background: palegreen;
+  background: #00d1b2;
   border-radius: 10px;
   height: 40px;
   width: 100px;
+  margin: 10px;
 }
 html .cartBtn {
   background-color: gold;
   border-radius: 5px;
   cursor: pointer;
   height: 30px;
+  margin: 10px;
 }
 @media (max-width: 600px) {
   html .columns {
@@ -211,6 +222,9 @@ html .navbar-item:hover:after {
     justify-content: center;
     align-items: center;
   }
+  html .buyBtn {
+    margin-top: -20px;
+  }
 }
 @media (min-width: 1024px) {
   html .columns {
@@ -236,11 +250,14 @@ html .navbar-item:hover:after {
     border-radius: 10px;
     height: 30px;
     cursor: pointer;
+    margin: 10px;
+    text-align: center;
   }
   html .columns .column .card .card-content .cartBtn {
     background-color: gold;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
   }
   html .columns .column .card img {
     -o-object-fit: cover;
@@ -349,6 +366,13 @@ html .navbar-item:hover:after {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+  html #contactTitle {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 20px;
   }
   html .formArea {
     background-color: white;

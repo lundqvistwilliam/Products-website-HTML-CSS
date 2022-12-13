@@ -33,6 +33,7 @@ html {
     }
 
    
+    
 
     #questionText {
         color:white;
@@ -49,6 +50,16 @@ html {
 
     .buyBtn {
         background: palegreen;
+        border-radius: 10px;
+        height: 40px;
+        width: 100px;
+    }
+
+    .cartBtn {
+        background-color: gold;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 30px;
     }
 
    
@@ -62,6 +73,7 @@ html {
 
         #quoteCard {
             margin-left: 10px;
+            padding: 10px;
         }
         
       
@@ -162,6 +174,7 @@ html {
 
     #quoteCard {
         text-align: center;
+        padding: 6px;
     }
 
     img {
@@ -196,15 +209,17 @@ html {
             margin: 0 auto;
             margin-bottom: 0px;
             text-align: center;
-            height: 300px;
+            // height: 300px;
             width: 200px;
             padding: 10px;
 
             .card {
                 min-width: 350px;
                 margin-left: -85px;
-                height: 285px;
-                padding: none;
+                height: 300px;
+                padding: 5px;
+
+               
 
                 img {
                     object-fit: cover;
@@ -222,7 +237,15 @@ html {
 
        
     }
-    
+   
+        
+
+
+   #address {
+    text-align: center;
+   }
+
+   
 
     #startQuote {
         text-align: center;
@@ -231,7 +254,18 @@ html {
     }
     .browse {
         margin-top: 5px;
+
+        #browseBtn {
+            width: 90%;
+            height: 50px;
+            margin-right: -50px;
+            font-size: 25px;
+        }
         
+    }
+
+    footer {
+        padding: 45px;
     }
 
    
@@ -250,6 +284,8 @@ html {
         justify-content: center;
         align-items: center;
     }
+
+   
        
 }
 
@@ -418,7 +454,7 @@ html {
 
         #questionText {
             text-align: center;
-            padding: 15px;
+            padding-top: 15px;
             color: black;
         }
 
@@ -503,6 +539,10 @@ html {
             background-color: $bulmaGreen;
         }
 
+        .startText {
+            margin-right: 20px;
+        }
+
         
     }
 
@@ -523,9 +563,19 @@ html {
         font-size: 20px;
     }
 
+    #shoppingCartButton {
+        color: black;
+    }
+
+    #address {
+        text-align: center;
+    }
+
    
 
     @media (min-width:2400px) { 
+
+       
        .browse {
         margin-right: 200px;
        }
@@ -537,9 +587,26 @@ html {
        .columns {
         margin-top: 250px;
        }
-      
 
-  
+       .startText {
+        margin-right: 120px;
+        font-size: 25px;
+       }
+
+       #browseBtn {
+        font-size: 25px;
+       }
+
+       #address {
+        text-align: center;
+        font-size: 25px;
+       }
+
+       #questionText {
+        font-size: 30px;
+       }
+
+       
     }
 
 

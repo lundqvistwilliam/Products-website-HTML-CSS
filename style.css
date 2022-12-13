@@ -33,6 +33,15 @@ html .label {
 }
 html .buyBtn {
   background: palegreen;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+}
+html .cartBtn {
+  background-color: gold;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
 }
 @media (max-width: 600px) {
   html .columns {
@@ -40,6 +49,7 @@ html .buyBtn {
   }
   html #quoteCard {
     margin-left: 10px;
+    padding: 10px;
   }
   html footer {
     padding: 5px;
@@ -119,6 +129,7 @@ html #employeesText {
 }
 html #quoteCard {
   text-align: center;
+  padding: 6px;
 }
 html img {
   -o-object-fit: cover;
@@ -150,15 +161,14 @@ html .navbar-item:hover:after {
     margin: 0 auto;
     margin-bottom: 0px;
     text-align: center;
-    height: 300px;
     width: 200px;
     padding: 10px;
   }
   html .columns .column .card {
     min-width: 350px;
     margin-left: -85px;
-    height: 285px;
-    padding: none;
+    height: 300px;
+    padding: 5px;
   }
   html .columns .column .card img {
     -o-object-fit: cover;
@@ -167,6 +177,9 @@ html .navbar-item:hover:after {
   html .columns .column .card .card-content {
     margin-top: -40px;
   }
+  html #address {
+    text-align: center;
+  }
   html #startQuote {
     text-align: center;
     margin-left: 300px;
@@ -174,6 +187,15 @@ html .navbar-item:hover:after {
   }
   html .browse {
     margin-top: 5px;
+  }
+  html .browse #browseBtn {
+    width: 90%;
+    height: 50px;
+    margin-right: -50px;
+    font-size: 25px;
+  }
+  html footer {
+    padding: 45px;
   }
   html .timelineText {
     text-align: center;
@@ -333,7 +355,7 @@ html .navbar-item:hover:after {
   }
   html .formArea #questionText {
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
     color: black;
   }
   html .formArea .field {
@@ -410,6 +432,9 @@ img {
   cursor: pointer;
   background-color: #00d1b2;
 }
+.browse .startText {
+  margin-right: 20px;
+}
 
 #estText {
   margin-top: 40px;
@@ -428,6 +453,14 @@ img {
   font-size: 20px;
 }
 
+#shoppingCartButton {
+  color: black;
+}
+
+#address {
+  text-align: center;
+}
+
 @media (min-width: 2400px) {
   .browse {
     margin-right: 200px;
@@ -437,5 +470,19 @@ img {
   }
   .columns {
     margin-top: 250px;
+  }
+  .startText {
+    margin-right: 120px;
+    font-size: 25px;
+  }
+  #browseBtn {
+    font-size: 25px;
+  }
+  #address {
+    text-align: center;
+    font-size: 25px;
+  }
+  #questionText {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
